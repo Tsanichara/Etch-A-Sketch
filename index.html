@@ -10,23 +10,30 @@
 <body>
     <h1>Etch-A-Sketch</h1>
 
-    <div class="EditSize">
-        <div class="slideContainer">
-            <p><span id="value">16</span> x <span id="value2">16</span></p>
-            <input type="range" min="16" max="100" value="16" class="slider" id="range">
-        
+    <div class="containerWhole">
+        <div class="container">
+
         </div>
 
-        <button class="size">Change Size</button>
-
+        <div class="EditSize">
+            <div class="slideContainer">
+                <p class="sliderValue"><span id="value">16</span> x <span id="value2">16</span></p>
+                <input type="range" min="16" max="100" value="16" class="slider" id="range">
+            
+            </div>
     
+            <button class="size">Change Size</button>
+    
+        
+        </div>
+    
+
     </div>
 
     
+    
 
-    <div class="container">
-
-    </div>
+    
     
 
     <script src="Etch.js"></script>

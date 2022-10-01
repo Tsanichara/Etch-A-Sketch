@@ -2,17 +2,42 @@
     display: grid;
     width: 600px;
     height: 600px;
+    border: 10px solid red;
+    border-radius: 8px;
+    margin: 30px;
      
 }
-/*
-grid-template-columns: repeat(16, 30px);
-    grid-template-rows: repeat(16, 30px);
-*/
-
 
 .slideContainer{
     display: flex;
     flex-direction: column;
 
     width: 200px;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.containerWhole{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sliderValue{
+    text-align: center;
+}
+
+.EditSize{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.size{
+    width: 100px;
+    align-self: center;
+
 }

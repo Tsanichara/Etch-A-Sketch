@@ -1,21 +1,8 @@
 const container = document.querySelector(".container");
 
-/*
-function createDivs(){
+let sizeBtn = document.querySelector(".size");
 
-    for(let i = 0; i < 256; i++){
-        let newDiv = document.createElement("div");
-        newDiv.classList.add('box');
-        newDiv.style.outline = "1px solid black";
-        newDiv.addEventListener("mouseover", function(){
-            newDiv.style.backgroundColor = "black";
-        })
 
-        container.appendChild(newDiv);
-    }
-
-}
-*/
 
 
 function createDivs(n){
@@ -26,7 +13,7 @@ function createDivs(n){
     for(let i = 0; i < square; i++){
         let newDiv = document.createElement("div");
         newDiv.classList.add('box');
-        newDiv.style.outline = "1px solid black";
+        newDiv.style.outline = "1px solid gray";
         newDiv.addEventListener("mouseover", function(){
             newDiv.style.backgroundColor = "black";
         })
@@ -49,7 +36,6 @@ function sizeChange(n){
 }
 
 
-let sizeBtn = document.querySelector(".size");
 
 sizeBtn.addEventListener("click", function(){
     let newSize = document.getElementById("range").value;

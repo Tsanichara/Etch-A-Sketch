@@ -1,4 +1,5 @@
 const container = document.querySelector(".container");
+
 /*
 function createDivs(){
 
@@ -18,6 +19,8 @@ function createDivs(){
 
 
 function createDivs(n){
+    
+
     let square = n**2;
 
     for(let i = 0; i < square; i++){
@@ -38,6 +41,30 @@ function createDivs(n){
 createDivs(16);
 
 
+function sizeChange(n){
+    while(container.firstChild){
+        container.removeChild(container.lastChild);
+    }
+    createDivs(n);
+}
 
 
+let sizeBtn = document.querySelector(".size");
 
+sizeBtn.addEventListener("click", function(){
+    let newSize = document.getElementById("range").value;
+    sizeChange(newSize);
+});
+
+
+let slider = document.getElementById("range");
+
+let output = document.getElementById("value");
+output.innerHTML = slider.value;
+let output2 = document.getElementById("value2");
+output2.innerHTML = slider.value;
+
+slider.oninput = function() {
+    output.innerHTML = this.value;
+    output2.innerHTML = this.value;
+  }
